@@ -20,6 +20,8 @@ gem 'coffee-rails', '~> 4.0.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+gem 'haml', '~> 4.0', '>= 4.0.7'
+gem 'haml-rails', '~> 0.9.0'
 
 #Api gems
 gem 'active_model_serializers'
@@ -27,4 +29,10 @@ gem 'active_model_serializers'
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
+end
+
+group :development do
+  gem 'pry-rails', '~> 0.3.4'
+  gem 'better_errors', '~> 2.1', '>= 2.1.1'
+
 end
