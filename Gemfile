@@ -34,5 +34,10 @@ end
 group :development do
   gem 'pry-rails', '~> 0.3.4'
   gem 'better_errors', '~> 2.1', '>= 2.1.1'
+end
 
+group :test do
+  gem "rspec-rails", "~> 2.14"
+  gem "factory_girl_rails"
+  gem 'ffaker'
 end
